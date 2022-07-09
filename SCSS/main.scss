@@ -66,6 +66,7 @@ header {
      .research {
         background-color: #F2F2F2;
         border: none;
+        outline: none;
         font-weight: 600;
     }
 
@@ -204,7 +205,6 @@ header {
 
 .card {
     border-radius: 15px 15px 15px 15px;
-    border: solid red 1px;
     box-shadow: black 20px 20px 20px -20px;
     margin-block: 15px;
 } 
@@ -212,7 +212,6 @@ header {
     .card_img {
         display: flex;
         position: relative;
-        border: solid blue 1px;
         border-radius: 15px 15px 0px 0px;
     }
 
