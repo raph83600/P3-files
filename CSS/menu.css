@@ -1,0 +1,38 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 768px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 h2 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+header banner_arrow {
+  display: flex;
+  width: 71.5px;
+  height: 71.5px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=menu.css.map */
