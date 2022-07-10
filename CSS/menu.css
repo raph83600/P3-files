@@ -97,7 +97,10 @@ header {
   border-radius: 15px;
 }
 
-
+.card_price {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 
 
