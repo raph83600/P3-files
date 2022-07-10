@@ -70,6 +70,10 @@ header {
         font-weight: 600;
     }
 
+    .search_box i {
+        color: black;
+    }
+
     /* fin recherche */
 
     .menu_text {
@@ -207,10 +211,12 @@ header {
     border-radius: 15px 15px 15px 15px;
     box-shadow: black 20px 20px 20px -20px;
     margin-block: 15px;
+    width: 100%;
 } 
 
     .card_img {
         display: flex;
+        width: 100%;
         position: relative;
         border-radius: 15px 15px 0px 0px;
     }
@@ -221,6 +227,9 @@ header {
 
              .img_menu {
                  border-radius: 15px 15px 0px 0px;
+                 object-fit: cover;
+                 width: 100%;
+                 height: 200px;
 
             }
 
@@ -255,12 +264,17 @@ header {
 
 footer {
 padding: 5%;
-background: black;
+background: #353535;
 color: white;
 width: 100%;
 
     .footer_list {
     margin-bottom: 1%;
+    }
+
+    a {
+        text-decoration: none;
+        color:white;   
     }
 }
 
