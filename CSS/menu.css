@@ -25,6 +25,16 @@ header {
   width: 100%;
   justify-content: center;
 }
+
+  .banner_img {
+    display: flex;
+    align-items: center;
+  }
+
+  .ohmyfood {
+    width: 70%;
+  }
+
   .banner_arrow {
     display: flex;
     width: 71.5px;
@@ -62,7 +72,46 @@ header {
       padding: 6%;
   }
 
+  .button_box {
+    display: flex;
+    justify-content: center;
+  }
+
 /* fin bouton explorer */
+
+
+/* main menu */
+
+.title_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  flex-wrap: nowrap;
+}
+
+.card_body {
+  border: solid black 1px;
+  width: 95%;
+  height: 80px;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   padding: 5%;
@@ -75,7 +124,7 @@ footer {
     margin-bottom: 1%;
   }
   
-  a {
+  .footer_list a {
     text-decoration: none;
     color:white;   
     }
