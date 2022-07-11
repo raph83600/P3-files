@@ -226,6 +226,33 @@ header .button_header p {
 .menu_carte .card_title {
   font-weight: bold;
 }
+.menu_carte .card_heart {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2%;
+  margin-bottom: 6%;
+}
+.menu_carte .card_heart i {
+  position: absolute;
+  transition: opacity 0.5s;
+}
+.menu_carte .card_heart .full_heart {
+  font-size: 30px;
+  opacity: 0;
+}
+.menu_carte .card_heart .empty_heart {
+  font-size: 30px;
+}
+.menu_carte .card_heart:hover .full_heart {
+  opacity: 1;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_carte .card_heart:hover .empty_heart {
+  opacity: 0;
+}
 
 footer {
   padding: 5%;

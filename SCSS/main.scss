@@ -260,6 +260,41 @@ header {
             font-weight: bold;
         }      
 
+        .card_heart {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 2%;
+            margin-bottom: 6%;
+
+            i { 
+                position: absolute;
+                transition: opacity 0.5s;
+            }
+        
+            .full_heart {
+                font-size: 30px;
+                opacity: 0;
+                
+            }
+
+            .empty_heart {
+                font-size: 30px;
+            }
+
+            &:hover {
+                .full_heart {
+                    opacity: 1;
+                    background: linear-gradient(#9356dc, #ff79da);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .empty_heart {
+                    opacity: 0;
+                }
+            }
+
+        }
 }
 
 footer {
