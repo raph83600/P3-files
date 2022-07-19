@@ -130,6 +130,10 @@ header .button_header p {
   position: relative;
   margin-bottom: 5%;
 }
+.nav .btn_menu:hover {
+  background-color: #d3beec;
+  box-shadow: black 20px 20px 20px -20px;
+}
 .nav span {
   display: grid;
   align-content: center;
