@@ -196,9 +196,6 @@ main .card_price {
   font-weight: bold;
   padding: 2%;
 }
-main .fa-circle-check {
-  animation: rotate 1000ms forwards;
-}
 
 footer {
   padding: 5%;
