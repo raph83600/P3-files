@@ -1,3 +1,5 @@
+@import "./utils/keyframes";
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -201,7 +203,7 @@ main {
         width: 20%;
       }
 
-      @keyframes rotate {
+    /*  @keyframes rotate {
         from {
           transform: rotate(0deg);
         }
@@ -212,8 +214,8 @@ main {
 
       .card_body:hover .card_price_btn .fa-circle-check {
         animation: rotate 1000ms forwards;
-      }
-
+      } 
+    */  
     .card_text {
         padding: 2%;
         width: 80%;
