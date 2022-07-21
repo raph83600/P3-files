@@ -4,6 +4,7 @@
 }
 
 body {
+    min-width: 365px;
     max-width: 768px;
     margin: 0%;
 }
@@ -247,3 +248,14 @@ footer {
             color:white;  
         }
 }
+
+@media (max-width:1440px) {
+
+
+header {
+    justify-content: center;
+    align-items: center;
+}
+
+}
+

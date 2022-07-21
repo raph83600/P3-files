@@ -4,6 +4,7 @@
 }
 
 body {
+  min-width: 365px;
   max-width: 768px;
   margin: 0%;
 }
@@ -208,6 +209,13 @@ footer .footer_list {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 1440px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
