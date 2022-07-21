@@ -6,6 +6,6 @@
   "scripts": {
   "sass": "sass --watch ./SCSS/main.scss:./CSS/main.css ./SCSS/menu.scss:./CSS/menu.css"
 },
-  "author": "",
+  "author": "raph",
   "license": "ISC"
 }
