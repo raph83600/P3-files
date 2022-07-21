@@ -229,8 +229,11 @@ main {
         align-items: flex-end;
         font-weight: bold;
         padding: 2%;
-}
+    }
 
+    .fa-circle-check {
+        animation: rotate 1000ms forwards;
+    }
 }
 
 footer {
@@ -249,13 +252,13 @@ footer {
         }
 }
 
-@media (max-width:1440px) {
+@media (min-width:1024px) {
 
-
-header {
-    justify-content: center;
-    align-items: center;
+.banner_img {
+    width: 50%;
 }
-
+.principal {
+    justify-content: center;
+}
 }
 

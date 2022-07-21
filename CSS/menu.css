@@ -196,6 +196,9 @@ main .card_price {
   font-weight: bold;
   padding: 2%;
 }
+main .fa-circle-check {
+  animation: rotate 1000ms forwards;
+}
 
 footer {
   padding: 5%;
@@ -211,10 +214,12 @@ footer a {
   color: white;
 }
 
-@media (max-width: 1440px) {
-  header {
+@media (min-width: 1024px) {
+  .banner_img {
+    width: 50%;
+  }
+  .principal {
     justify-content: center;
-    align-items: center;
   }
 }
 
