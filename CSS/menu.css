@@ -169,10 +169,21 @@ main .card_body:hover .card_text {
 main .card_body:hover .card_price_btn {
   width: 20%;
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .card_body:hover .card_price_btn .fa-circle-check {
+  animation: rotate 1000ms forwards;
+}
 main .card_text {
   padding: 2%;
   width: 80%;
-  transition: width 5s;
+  transition: width 1s;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -180,7 +191,7 @@ main .card_text {
 main .card_price_btn {
   background-color: #99E2D0;
   width: 0%;
-  transition: width 5s;
+  transition: width 1s;
   overflow: hidden;
   font-size: 40px;
   display: flex;
