@@ -89,18 +89,16 @@
   /* IE6-9 */
   animation: loader_box 3000ms forwards;
 }
-@media (max-width: 768px) {
-  .loader::before p {
-    position: absolute;
-    top: 155px;
-    width: 55%;
-    font-family: "Shrikhand";
-    font-size: 60px;
-    z-index: 999;
-    animation: loader_box 3000ms forwards;
-  }
+.loader p {
+  position: absolute;
+  top: 155px;
+  width: 55%;
+  font-family: "Shrikhand";
+  font-size: 60px;
+  z-index: 999;
+  animation: loader_box 3000ms forwards;
 }
-.loader::before__logo {
+.loader__logo {
   position: absolute;
   z-index: 999;
   width: 35%;

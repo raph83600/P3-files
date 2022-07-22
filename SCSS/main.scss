@@ -35,17 +35,16 @@
          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff79da', endColorstr='#9356dc', GradientType=0);
          /* IE6-9 */
          animation: loader_box 3000ms forwards;
+    }
 
     p {
-        @media (max-width: $tablet-responsive) {
-            position: absolute;
-            top: 155px;
-            width: 55%;
-            font-family: 'Shrikhand';
-            font-size: 60px;
-            z-index: 999;
-            animation: loader_box 3000ms forwards;
-        }
+        position: absolute;
+        top: 155px;
+        width: 55%;
+        font-family: 'Shrikhand';
+        font-size: 60px;
+        z-index: 999;
+        animation: loader_box 3000ms forwards;   
     }
 
     &__logo {
@@ -58,7 +57,7 @@
         animation: loader_logo 1500ms ease, loader_box 2500ms both;
         }
     }
-}
+
 
 body {
     min-width: 365px;
