@@ -20,7 +20,6 @@
     left : 0px;
     height : 100%;
     width : 100%;
-    cursor : wait;
     background: rgb(255, 121, 218);
     /* Old browsers */
     background: -moz-linear-gradient(top, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
@@ -31,11 +30,11 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff79da', endColorstr='#9356dc', GradientType=0);
     /* IE6-9 */
-    animation: loader_box 5s;
+    animation: loader_box 5s forwards;
 }
 
 .loader_logo {
- animation: loader_logo 1s;
+ animation: loader_logo 1.5s;
 
 }
 
