@@ -58,7 +58,7 @@
   box-sizing: border-box;
 }
 
-.loader_box {
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@
   width: 100%;
   pointer-events: none;
 }
-.loader_box::before {
+.loader::before {
   content: "";
   position: fixed;
   top: 0;
@@ -90,7 +90,7 @@
   animation: loader_box 3000ms forwards;
 }
 @media (max-width: 768px) {
-  .loader_box::before p {
+  .loader::before p {
     position: absolute;
     top: 155px;
     width: 55%;
@@ -100,7 +100,7 @@
     animation: loader_box 3000ms forwards;
   }
 }
-.loader_box::before__logo {
+.loader::before__logo {
   position: absolute;
   z-index: 999;
   width: 35%;
