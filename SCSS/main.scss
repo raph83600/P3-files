@@ -15,31 +15,49 @@
     font-weight: bold;
     position : fixed;
     font-family: 'Shrikhand';
-    z-index: 999;
-    top : 0px;
-    left : 0px;
-    height : 100%;
-    width : 100%;
-    background: rgb(255, 121, 218);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff79da', endColorstr='#9356dc', GradientType=0);
-    /* IE6-9 */
-    animation: loader_box 5s forwards;
+    height: 100%;
+    pointer-events: none;
 
-    .title {
-        @media  (max-width: $tablet-responsive) {
+    &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        height : 100%;
+        width : 100%;
+        background: rgb(255, 121, 218);
+         /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
+         /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
+         /* Chrome10-25,Safari5.1-6 */
+         background: linear-gradient(to bottom, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
+         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff79da', endColorstr='#9356dc', GradientType=0);
+         /* IE6-9 */
+         animation: loader_box 3000ms forwards;
+
+    p {
+        @media (max-width: $tablet-responsive) {
+            position: absolute;
+            top: 155px;
+            width: 55%;
+            font-family: 'Shrikhand';
             font-size: 60px;
+            z-index: 999;
+            animation: loader_box 3000ms forwards;
         }
     }
 
-    .loader_logo {
-        animation: loader_logo 1.5s;
+    &__logo {
+        position: absolute;
+        z-index: 999;
+        width: 35%;
+        height: 30%;
+        font-size: 35px;
+        top: 350px;
+        animation: loader_logo 1500ms ease, loader_box 2500ms both;
+        }
     }
 }
 

@@ -67,9 +67,14 @@
   font-weight: bold;
   position: fixed;
   font-family: "Shrikhand";
+  height: 100%;
+  pointer-events: none;
+}
+.loader_box::before {
+  content: "";
+  position: fixed;
+  top: 0;
   z-index: 999;
-  top: 0px;
-  left: 0px;
   height: 100%;
   width: 100%;
   background: rgb(255, 121, 218);
@@ -82,15 +87,27 @@
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da", endColorstr="#9356dc", GradientType=0);
   /* IE6-9 */
-  animation: loader_box 5s forwards;
+  animation: loader_box 3000ms forwards;
 }
 @media (max-width: 768px) {
-  .loader_box .title {
+  .loader_box::before p {
+    position: absolute;
+    top: 155px;
+    width: 55%;
+    font-family: "Shrikhand";
     font-size: 60px;
+    z-index: 999;
+    animation: loader_box 3000ms forwards;
   }
 }
-.loader_box .loader_logo {
-  animation: loader_logo 1.5s;
+.loader_box::before__logo {
+  position: absolute;
+  z-index: 999;
+  width: 35%;
+  height: 30%;
+  font-size: 35px;
+  top: 350px;
+  animation: loader_logo 1500ms ease, loader_box 2500ms both;
 }
 
 body {
