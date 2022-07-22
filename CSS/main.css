@@ -269,6 +269,21 @@ header .button_header p {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .fontion_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .menu_carte {
   display: flex;
   flex-direction: column;

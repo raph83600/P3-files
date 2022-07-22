@@ -238,6 +238,21 @@ header {
             }
 }
 
+.fontion_menu {
+    @media (min-width: $desktop-responsive) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.box {
+    @media (min-width: $desktop-responsive) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 .menu_carte {
     display: flex;
