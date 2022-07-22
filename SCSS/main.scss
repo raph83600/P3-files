@@ -1,10 +1,20 @@
+@import "./utils/keyframes";
+@import "./Fonctions/variable";
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 body {
+    min-width: 365px;
     max-width: 768px;
+    @media  (min-width: $tablet-responsive) {
+        max-width: 100%;
+    }
+    @media (min-width: $desktop-responsive) {
+        max-width: 100%;
+    }
 }
 
 img {
@@ -316,6 +326,12 @@ width: 100%;
         text-decoration: none;
         color:white;   
     }
+
+    @media (min-width: $desktop-responsive) {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }    
 }
 
 
