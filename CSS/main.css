@@ -66,6 +66,7 @@
   font-size: 80px;
   font-weight: bold;
   position: fixed;
+  font-family: "Shrikhand";
   z-index: 9999;
   top: 0px;
   left: 0px;
@@ -83,8 +84,12 @@
   /* IE6-9 */
   animation: loader_box 5s forwards;
 }
-
-.loader_logo {
+@media (max-width: 768px) {
+  .loader_box .title {
+    font-size: 60px;
+  }
+}
+.loader_box .loader_logo {
   animation: loader_logo 1.5s;
 }
 

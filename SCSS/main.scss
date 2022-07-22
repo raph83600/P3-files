@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 .loader_box {
     display: flex;
     justify-content: center;
@@ -15,6 +14,7 @@
     font-size: 80px;
     font-weight: bold;
     position : fixed;
+    font-family: 'Shrikhand';
     z-index: 9999;
     top : 0px;
     left : 0px;
@@ -31,11 +31,17 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff79da', endColorstr='#9356dc', GradientType=0);
     /* IE6-9 */
     animation: loader_box 5s forwards;
-}
 
-.loader_logo {
- animation: loader_logo 1.5s;
+    .title {
+        @media  (max-width: $tablet-responsive) {
+            font-size: 60px;
+        }
+    }
 
+    .loader_logo {
+        animation: loader_logo 1.5s;
+
+    }
 }
 
 body {
