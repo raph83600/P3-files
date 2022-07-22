@@ -91,6 +91,8 @@
 }
 .loader p {
   position: absolute;
+  display: flex;
+  justify-content: center;
   top: 155px;
   width: 55%;
   font-family: "Shrikhand";
@@ -103,9 +105,20 @@
   z-index: 999;
   width: 35%;
   height: 30%;
-  font-size: 35px;
+  font-size: 60px;
   top: 350px;
   animation: loader_logo 1500ms ease, loader_box 2500ms both;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
