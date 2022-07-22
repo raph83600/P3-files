@@ -65,9 +65,9 @@
   flex-direction: column;
   font-size: 80px;
   font-weight: bold;
-  position: fixed;
   font-family: "Shrikhand";
   height: 100%;
+  width: 100%;
   pointer-events: none;
 }
 .loader_box::before {
