@@ -242,6 +242,11 @@ header .button_header p {
   justify-content: flex-start;
   padding: 5%;
 }
+@media (min-width: 1024px) {
+  .nav {
+    padding: 0%;
+  }
+}
 .nav a {
   text-decoration: none;
   color: grey;
@@ -258,6 +263,12 @@ header .button_header p {
   height: 90px;
   position: relative;
   margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  .nav .btn_menu {
+    width: 30%;
+    margin-bottom: 2%;
+  }
 }
 .nav .btn_menu:hover {
   background-color: #d3beec;
@@ -324,6 +335,12 @@ header .button_header p {
 .menu_carte .title_menu {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  .menu_carte .title_menu {
+    display: flex;
+    justify-content: center;
+  }
 }
 .menu_carte .cards_global {
   padding: 2%;

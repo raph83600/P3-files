@@ -202,6 +202,10 @@ header {
     justify-content: flex-start;
     padding: 5%;
 
+    @media (min-width: $desktop-responsive) {
+        padding: 0%;
+    }
+
     a {
         text-decoration: none;
         color : grey
@@ -220,6 +224,11 @@ header {
             height: 90px;
             position: relative;
             margin-bottom: 5%;
+
+            @media (min-width: $desktop-responsive) {
+                width: 30%;
+                margin-bottom: 2%;
+            }
         }
 
         .btn_menu:hover {
@@ -292,10 +301,15 @@ header {
     }
 
 
-    .title_menu {
-         margin-top: 5%;
-        margin-bottom: 5%;
+.title_menu {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+     @media (min-width: $desktop-responsive) {
+        display: flex;
+        justify-content: center;
     }
+}
 
 .cards_global {
     padding: 2%;
