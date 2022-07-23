@@ -281,6 +281,15 @@ header {
         flex-direction: column;
     }
 }
+    .title_nav{
+    @media (min-width: $desktop-responsive) {
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+        width: 100%;
+        margin: 0;
+    }
+}
 
 .box {
     @media (min-width: $desktop-responsive) {
@@ -304,10 +313,13 @@ header {
 .title_menu {
     margin-top: 5%;
     margin-bottom: 5%;
-
-     @media (min-width: $desktop-responsive) {
+    
+    @media (min-width: $desktop-responsive) {
         display: flex;
         justify-content: center;
+        padding: 1%;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -321,7 +333,20 @@ header {
     box-shadow: black 20px 20px 20px -20px;
     margin-block: 15px;
     width: 100%;
+
+    @media (min-width: $desktop-responsive) {
+        width: 40%;
+    }
 } 
+
+.card_menu {
+    @media (min-width: $desktop-responsive) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    }
+}
 
     .card_img {
         display: flex;

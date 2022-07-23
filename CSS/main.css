@@ -317,6 +317,16 @@ header .button_header p {
 }
 
 @media (min-width: 1024px) {
+  .title_nav {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
   .box {
     display: flex;
     justify-content: center;
@@ -340,6 +350,9 @@ header .button_header p {
   .menu_carte .title_menu {
     display: flex;
     justify-content: center;
+    padding: 1%;
+    width: 100%;
+    margin: 0;
   }
 }
 .menu_carte .cards_global {
@@ -350,6 +363,19 @@ header .button_header p {
   box-shadow: black 20px 20px 20px -20px;
   margin-block: 15px;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .menu_carte .card {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu_carte .card_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
 }
 .menu_carte .card_img {
   display: flex;
