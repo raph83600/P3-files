@@ -419,7 +419,10 @@ header {
                 .full_heart {
                     opacity: 1;
                     background: linear-gradient(#9356dc, #ff79da);
+                    background: -webkit-linear-gradient(top, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%, rgba(147, 86, 220, 1) 100%);
+                    /* Chrome10-25,Safari5.1-6 */
                     background-clip: text;
+                    -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
                 .empty_heart {
@@ -431,13 +434,13 @@ header {
 }
 
 footer {
-padding: 5%;
-background: #353535;
-color: white;
-width: 100%;
+    padding: 5%;
+    background: #353535;
+    color: white;
+    width: 100%;
 
     .footer_list {
-    margin-bottom: 1%;
+        margin-bottom: 1%;
     }
 
     a {

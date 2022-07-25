@@ -436,7 +436,10 @@ header .button_header p {
 .menu_carte .card_heart:hover .full_heart {
   opacity: 1;
   background: linear-gradient(#9356dc, #ff79da);
+  background: -webkit-linear-gradient(top, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%, rgb(147, 86, 220) 100%);
+  /* Chrome10-25,Safari5.1-6 */
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menu_carte .card_heart:hover .empty_heart {
