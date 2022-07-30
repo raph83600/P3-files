@@ -240,12 +240,14 @@ header {
                 font-weight: bold;
                 margin-left: 7%;
                 color: black;
+                margin-bottom: 5px;
             }
         
             .icon_nav {
                 display: flex;
                 align-items: center;
                 margin-left: 10%;
+                margin-bottom: 5px;
             }
 
             .numberbox {
@@ -304,7 +306,6 @@ header {
 
     a {
         text-decoration: none;
-        color: black;
     }
 
 

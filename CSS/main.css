@@ -269,7 +269,7 @@ header .button_header p {
   }
 }
 .nav .btn_menu:hover {
-  background-color: #d3beec;
+  background-color: #eee7f6;
   box-shadow: black 20px 20px 20px -20px;
 }
 .nav span {
@@ -278,11 +278,13 @@ header .button_header p {
   font-weight: bold;
   margin-left: 7%;
   color: black;
+  margin-bottom: 5px;
 }
 .nav .icon_nav {
   display: flex;
   align-items: center;
   margin-left: 10%;
+  margin-bottom: 5px;
 }
 .nav .numberbox {
   width: 25px;
@@ -338,7 +340,6 @@ header .button_header p {
 }
 .menu_carte a {
   text-decoration: none;
-  color: black;
 }
 .menu_carte .title_menu {
   margin-top: 5%;
