@@ -229,21 +229,8 @@ main {
                 flex-direction: column;
                 padding: 2%;
                 gap: 1%;
-                animation: apparition 1000ms forwards; 
             }
-        }   
-        .plats {
-            @media (min-width: $desktop-responsive) {
-                animation: apparition 1000ms both 1000ms;
-            }
-        }
-            
-        .desserts {
-            @media (min-width: $desktop-responsive) {
-                animation: apparition 1000ms both 2000ms;
-            }
-        }
-           
+        }    
 
       .title_green {
         font-size: 18px;

@@ -266,17 +266,6 @@ main .card_heart:hover .empty_heart {
     flex-direction: column;
     padding: 2%;
     gap: 1%;
-    animation: apparition 1000ms forwards;
-  }
-}
-@media (min-width: 1024px) {
-  main .plats {
-    animation: apparition 1000ms both 1000ms;
-  }
-}
-@media (min-width: 1024px) {
-  main .desserts {
-    animation: apparition 1000ms both 2000ms;
   }
 }
 main .title_green {
