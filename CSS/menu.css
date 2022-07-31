@@ -91,6 +91,7 @@ h2 {
 h3, p {
   text-overflow: ellipsis;
   overflow: hidden;
+  margin: 0;
 }
 
 header {
@@ -288,7 +289,6 @@ main .card_body {
   border-radius: 15px;
   margin-bottom: 20px;
   width: 100%;
-  height: 100%;
 }
 main .card_body:hover .card_text {
   width: 80%;
@@ -300,12 +300,16 @@ main .card_body:hover .card_price_btn .fa-circle-check {
   animation: rotation 1000ms forwards;
 }
 main .card_text {
-  padding: 2%;
+  height: 70px;
+  margin-left: 10px;
   width: 100%;
   transition: width 1s;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 main .card_price_btn {
   background-color: #99E2D0;
