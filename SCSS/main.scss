@@ -311,6 +311,7 @@ header {
 
     a {
         text-decoration: none;
+        color: black;
     }
 
 
@@ -408,12 +409,15 @@ header {
 
             i { 
                 position: absolute;
-                transition: opacity 0.5s;
+                transition: opacity 600ms;
             }
         
             .full_heart {
                 font-size: 30px;
                 opacity: 0;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 
             }
 

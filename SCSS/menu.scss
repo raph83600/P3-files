@@ -197,6 +197,9 @@ main {
         .full_heart {
             font-size: 30px;
             opacity: 0;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             
         }
 
@@ -209,6 +212,7 @@ main {
                 opacity: 1;
                 background: linear-gradient(#9356dc, #ff79da);
                 background-clip: text;
+                -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             .empty_heart {
@@ -264,11 +268,11 @@ main {
       }
 
       .card_body:hover .card_price_btn {
-        width: 20%;
+        width: 25%;
       }
 
       .card_body:hover .card_price_btn .fa-circle-check {
-        animation: rotation 1000ms forwards;
+        animation: rotation 1500ms ease-in-out;
       } 
 
     .card_text {

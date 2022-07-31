@@ -3,7 +3,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes apparition {
@@ -345,6 +345,7 @@ header .button_header p {
 }
 .menu_carte a {
   text-decoration: none;
+  color: black;
 }
 .menu_carte .title_menu {
   margin-top: 5%;
@@ -430,11 +431,14 @@ header .button_header p {
 }
 .menu_carte .card_heart i {
   position: absolute;
-  transition: opacity 0.5s;
+  transition: opacity 600ms;
 }
 .menu_carte .card_heart .full_heart {
   font-size: 30px;
   opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu_carte .card_heart .empty_heart {
   font-size: 30px;

@@ -3,7 +3,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes apparition {
@@ -242,6 +242,9 @@ main .card_heart i {
 main .card_heart .full_heart {
   font-size: 30px;
   opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .card_heart .empty_heart {
   font-size: 30px;
@@ -250,6 +253,7 @@ main .card_heart:hover .full_heart {
   opacity: 1;
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 main .card_heart:hover .empty_heart {
@@ -294,10 +298,10 @@ main .card_body:hover .card_text {
   width: 80%;
 }
 main .card_body:hover .card_price_btn {
-  width: 20%;
+  width: 25%;
 }
 main .card_body:hover .card_price_btn .fa-circle-check {
-  animation: rotation 1000ms forwards;
+  animation: rotation 1500ms ease-in-out;
 }
 main .card_text {
   height: 70px;
