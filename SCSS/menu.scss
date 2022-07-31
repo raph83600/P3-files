@@ -223,7 +223,7 @@ main {
     } 
 
         article {
-            
+
             @media (min-width: $desktop-responsive) {
                 width: 25%;
                 display: flex;
@@ -241,8 +241,6 @@ main {
         width: 7%;
       }
 
-      
-
       .card_body {
         display: flex;
         margin-top: 5%;
@@ -254,7 +252,6 @@ main {
         -moz-animation: fadein 5s; /* Firefox */
         -webkit-animation: fadein 5s; /* Safari et Chrome */
         -o-animation: fadein 5s; /* Opera */
-
       }
 
       .card_body:hover .card_text {
