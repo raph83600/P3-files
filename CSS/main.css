@@ -150,7 +150,7 @@ body {
     max-width: 100%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   body {
     max-width: 100%;
   }
@@ -266,7 +266,7 @@ header .button_header p {
   justify-content: flex-start;
   padding: 5%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .nav {
     padding: 0%;
   }
@@ -288,7 +288,7 @@ header .button_header p {
   position: relative;
   margin-bottom: 5%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .nav .btn_menu {
     width: 30%;
     margin-bottom: 2%;
@@ -335,7 +335,7 @@ header .button_header p {
   justify-content: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .fontion_menu {
     display: flex;
     justify-content: center;
@@ -343,7 +343,7 @@ header .button_header p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .title_nav {
     display: flex;
     justify-content: center;
@@ -353,7 +353,7 @@ header .button_header p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .box {
     display: flex;
     justify-content: center;
@@ -373,7 +373,7 @@ header .button_header p {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .menu_carte .title_menu {
     display: flex;
     justify-content: center;
@@ -391,12 +391,12 @@ header .button_header p {
   margin-block: 15px;
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .menu_carte .card {
     width: 40%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .menu_carte .card_menu {
     display: flex;
     flex-wrap: wrap;
@@ -491,7 +491,7 @@ footer a {
   text-decoration: none;
   color: white;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   footer {
     display: flex;
     justify-content: space-around;

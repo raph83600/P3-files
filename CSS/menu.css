@@ -90,7 +90,7 @@ body {
     max-width: 100%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   body {
     max-width: 100%;
   }
@@ -129,7 +129,7 @@ header .banner_img {
 header .ohmyfood {
   width: 70%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   header .ohmyfood {
     width: 35%;
   }
@@ -145,7 +145,7 @@ header .fleche_menu {
   color: black;
   text-decoration: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   header .fleche_menu {
     font-size: 55px;
   }
@@ -153,7 +153,6 @@ header .fleche_menu {
 
 main {
   /* main menu */
-  /* fin bouton explorer */
 }
 main .menu {
   display: flex;
@@ -167,7 +166,7 @@ main .principal {
   margin-top: -5%;
   padding: 4%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   main .principal {
     display: flex;
     flex-direction: row;
@@ -176,32 +175,17 @@ main .principal {
 }
 main .button_menu a {
   color: white;
+  width: 60%;
+  height: 60px;
   text-decoration: none;
   font-weight: bold;
-  display: block;
-}
-main .button_menu p {
-  margin: 0%;
-  padding: 6%;
-}
-main .button_box {
   display: flex;
-  justify-content: center;
-}
-@media (min-width: 1024px) {
-  main .button_box {
-    padding: 2%;
-    align-items: center;
-  }
-}
-main .button_menu {
-  display: block;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 250px;
-  height: 55px;
-  border-radius: 25px 25px 25px 25px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px 25px 25px 25px;
   background: rgb(255, 121, 218);
   /* Old browsers */
   background: -moz-linear-gradient(top, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%, rgb(147, 86, 220) 100%);
@@ -213,91 +197,107 @@ main .button_menu {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff79da", endColorstr="#9356dc", GradientType=0);
   /* IE6-9 */
 }
-main .button_menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-}
-main .button_box {
+main .button_menu {
   display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: 55px;
+  border-radius: 25px 25px 25px 25px;
+  text-align: center;
   justify-content: center;
 }
-main .menu img {
+@media (min-width: 1440px) {
+  main .button_menu {
+    padding: 2%;
+    align-items: flex-end;
+    width: 20%;
+    align-content: flex-end;
+  }
+}
+
+/* fin bouton explorer */
+.menu img {
   z-index: -1;
   position: relative;
   object-fit: cover;
   height: 260px;
 }
 @media (min-width: 768px) {
-  main .menu img {
+  .menu img {
     height: 500px;
   }
 }
-main .title_menu {
+
+.title_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 95%;
   flex-wrap: nowrap;
 }
-@media (min-width: 1024px) {
-  main .title_menu {
-    width: 10%;
+@media (min-width: 1440px) {
+  .title_menu {
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2%;
+    padding-left: 40px;
+    padding-right: 20px;
   }
 }
-main .card_heart {
+
+.card_heart {
   display: flex;
   justify-content: center;
   position: relative;
   padding: 2%;
   margin-bottom: 6%;
 }
-main .card_heart i {
+.card_heart i {
   position: absolute;
   transition: opacity 0.5s;
 }
-main .card_heart .full_heart {
+.card_heart .full_heart {
   font-size: 30px;
   opacity: 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main .card_heart .empty_heart {
+.card_heart .empty_heart {
   font-size: 30px;
 }
-main .card_heart:hover .full_heart {
+.card_heart:hover .full_heart {
   opacity: 1;
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main .card_heart:hover .empty_heart {
+.card_heart:hover .empty_heart {
   opacity: 0;
 }
-@media (min-width: 1024px) {
-  main article {
-    width: 25%;
+
+@media (min-width: 1440px) {
+  article {
+    width: 20%;
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 10px;
     gap: 1%;
   }
 }
-main .title_green {
+
+.title_green {
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 10px;
   border-bottom: solid #99e2d0 3px;
   width: 7%;
 }
-main .card_body {
+
+.card_body {
   display: flex;
   margin-top: 10%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -309,16 +309,20 @@ main .card_body {
   opacity: 0;
   animation-fill-mode: forwards;
 }
-main .card_body:hover .card_text {
+
+.card_body:hover .card_text {
   width: 80%;
 }
-main .card_body:hover .card_price_btn {
+
+.card_body:hover .card_price_btn {
   width: 25%;
 }
-main .card_body:hover .card_price_btn .fa-circle-check {
+
+.card_body:hover .card_price_btn .fa-circle-check {
   animation: rotation 1500ms ease-in-out;
 }
-main .card_text {
+
+.card_text {
   height: 70px;
   margin-left: 10px;
   width: 100%;
@@ -330,7 +334,8 @@ main .card_text {
   justify-content: space-around;
   flex-direction: column;
 }
-main .card_price_btn {
+
+.card_price_btn {
   background-color: #99E2D0;
   width: 0%;
   transition: width 1s;
@@ -343,7 +348,8 @@ main .card_price_btn {
   color: white;
   cursor: pointer;
 }
-main .card_price {
+
+.card_price {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -365,7 +371,7 @@ footer a {
   text-decoration: none;
   color: white;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   footer {
     display: flex;
     justify-content: space-around;
