@@ -56,35 +56,25 @@
 @keyframes fadein {
   from {
     opacity: 0;
+    margin-top: 15%;
   }
   to {
     opacity: 1;
+    margin-top: 5%;
   }
 }
-@-moz-keyframes fadein { /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.delay1 {
+  animation-delay: 200ms;
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+
+.delay2 {
+  animation-delay: 400ms;
 }
-@-o-keyframes fadein { /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+
+.delay3 {
+  animation-delay: 600ms;
 }
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -309,15 +299,15 @@ main .title_green {
 }
 main .card_body {
   display: flex;
-  margin-top: 5%;
+  margin-top: 10%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 15px;
   margin-bottom: 20px;
   width: 100%;
-  animation: fadein 5s;
-  -moz-animation: fadein 5s; /* Firefox */
-  -webkit-animation: fadein 5s; /* Safari et Chrome */
-  -o-animation: fadein 5s; /* Opera */
+  animation-name: fadein;
+  animation-duration: 2000ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 main .card_body:hover .card_text {
   width: 80%;

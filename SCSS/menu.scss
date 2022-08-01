@@ -243,15 +243,15 @@ main {
 
       .card_body {
         display: flex;
-        margin-top: 5%;
+        margin-top: 10%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 15px;
         margin-bottom: 20px;
         width: 100%;
-        animation: fadein 5s;
-        -moz-animation: fadein 5s; /* Firefox */
-        -webkit-animation: fadein 5s; /* Safari et Chrome */
-        -o-animation: fadein 5s; /* Opera */
+        animation-name: fadein;
+        animation-duration: 2000ms;
+        opacity: 0;
+        animation-fill-mode: forwards;
       }
 
       .card_body:hover .card_text {

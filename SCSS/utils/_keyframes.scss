@@ -57,36 +57,25 @@
   }
 }
 
-  @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+@keyframes fadein {
+  from {
+     opacity:0;
+     margin-top: 15%;
   }
+  to {
+    opacity:1;
+    margin-top: 5%;
+  }
+}
 
-@-moz-keyframes fadein { /* sur Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+.delay1 {
+  animation-delay: 200ms;
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+.delay2 {
+  animation-delay: 400ms;
 }
-@-o-keyframes fadein { /* sur Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+
+.delay3 {
+  animation-delay: 600ms;
 }
